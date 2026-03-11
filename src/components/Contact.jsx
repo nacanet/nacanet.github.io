@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+const CONTACT_EMAIL = 'hola@nacanet.dev'
 const SERVICES = ['Full Stack', 'Inteligencia Artificial', 'Marketing', 'Todo lo anterior']
 
 export default function Contact() {
@@ -12,7 +13,11 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // In a real deployment, connect to a form service (Formspree, Resend, etc.)
+    const subject = encodeURIComponent(`[NacaNet] Solicitud de servicio: ${form.service}`)
+    const body = encodeURIComponent(
+      `Nombre: ${form.name}\nEmail: ${form.email}\nServicio: ${form.service}\n\n${form.message}`
+    )
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`
     setSent(true)
   }
 
