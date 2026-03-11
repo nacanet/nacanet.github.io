@@ -33,8 +33,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Pushes the built dist/ files to the gh-pages branch.
+      # Go to repo Settings → Pages → set source to "Deploy from a branch" → gh-pages → / (root)
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          publish_branch: gh-pages
+          # Keep a .nojekyll file so GitHub Pages serves assets with underscores correctly
+          enable_jekyll: false
