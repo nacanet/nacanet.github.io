@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- Reemplaza esta URL con la ruta real de tu logo una vez subido -->
+
 <img src="https://nacanet.es/logo.png" alt="nacanet logo" width="160" />
 
 # nacanet
