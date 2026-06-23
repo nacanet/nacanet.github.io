@@ -8,6 +8,12 @@
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.7.0/dist/tabler-icons.min.css">
   <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      var theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
 <body>
   <!-- Fondo animado sutil -->
@@ -24,75 +30,83 @@
       <span class="nav-name">nacanet</span>
     </a>
     <div class="nav-links">
-      <a href="#proyectos">proyectos</a>
-      <a href="#stack">stack</a>
-      <a href="#contacto">contacto</a>
+      <a href="#proyectos" data-i18n="nav.proyectos">proyectos</a>
+      <a href="#stack" data-i18n="nav.stack">stack</a>
+      <a href="#contacto" data-i18n="nav.contacto">contacto</a>
+    </div>
+    <div class="nav-toggles">
+      <button class="toggle-btn" id="theme-toggle" type="button" aria-label="Cambiar tema">
+        <i class="ti ti-sun" id="theme-icon"></i>
+      </button>
+      <button class="toggle-btn lang-btn" id="lang-toggle" type="button" aria-label="Change language">
+        <span id="lang-label">EN</span>
+      </button>
     </div>
   </nav>
 
   <header class="hero" id="top">
     <img class="hero-logo" src="assets/logo.png" alt="nacanet logo">
-    <span class="hero-tag"><span class="dot"></span> disponible para proyectos</span>
-    <h1>Desarrollador<br>fullstack</h1>
-    <p>Diseño y construyo productos digitales completos — desde la base de datos hasta la interfaz. Especializado en inteligencia artificial: avatares, agentes, automatizaciones e integraciones. React, Python, PHP, WordPress y lo que haga falta.</p>
+    <span class="hero-tag"><span class="dot"></span> <span data-i18n="hero.tag">disponible para proyectos</span></span>
+    <h1 data-i18n="hero.title">Desarrollador<br>fullstack</h1>
+    <p data-i18n="hero.desc">Diseño y construyo productos digitales completos — desde la base de datos hasta la interfaz. Especializado en inteligencia artificial: avatares, agentes, automatizaciones e integraciones. React, Python, PHP, WordPress y lo que haga falta.</p>
     <div class="hero-btns">
-      <a class="btn-primary" href="#proyectos">ver proyectos <i class="ti ti-arrow-right"></i></a>
-      <a class="btn-secondary" href="#contacto">contactar</a>
+      <a class="btn-primary" href="#proyectos"><span data-i18n="hero.btnPrimary">ver proyectos</span> <i class="ti ti-arrow-right"></i></a>
+      <a class="btn-secondary" href="#contacto" data-i18n="hero.btnSecondary">contactar</a>
     </div>
   </header>
 
   <hr class="divider">
 
   <section class="section" id="proyectos">
-    <p class="section-label">proyectos</p>
-    <h2>Trabajo reciente</h2>
-    <p class="section-sub">Algunas de las cosas que he construido — apps, extensiones, plugins, plataformas y más.</p>
+    <p class="section-label" data-i18n="proyectos.label">proyectos</p>
+    <h2 data-i18n="proyectos.title">Trabajo reciente</h2>
+    <p class="section-sub" data-i18n="proyectos.sub">Algunas de las cosas que he construido — apps, extensiones, plugins, plataformas y más.</p>
     <div class="projects">
       <article class="card">
         <div class="card-header">
           <div class="card-icon icon-amber"><i class="ti ti-sparkles"></i></div>
-          <span class="card-tag">IA · agentes</span>
+          <span class="card-tag" data-i18n="card1.tag">IA · agentes</span>
         </div>
-        <h3>Soluciones con IA</h3>
-        <p>Avatares con IA, agentes conversacionales, automatizaciones e integraciones con modelos de lenguaje.</p>
+        <h3 data-i18n="card1.title">Soluciones con IA</h3>
+        <p data-i18n="card1.desc">Avatares con IA, agentes conversacionales, automatizaciones e integraciones con modelos de lenguaje.</p>
         <div class="card-footer">
-          <a class="card-link" href="#">ver proyecto <i class="ti ti-arrow-up-right"></i></a>
+          <a class="card-link" href="#" data-i18n="card.viewProject">ver proyecto <i class="ti ti-arrow-up-right"></i></a>
           <a class="card-link" href="https://github.com/nacanet" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
         </div>
       </article>
       <article class="card">
         <div class="card-header">
           <div class="card-icon icon-purple"><i class="ti ti-topology-star-3"></i></div>
-          <span class="card-tag">extensión · Chrome</span>
+          <span class="card-tag" data-i18n="card2.tag">extensión · Chrome</span>
         </div>
         <h3>FlowMind</h3>
-        <p>Extensión de navegador para gestión del flujo de trabajo y productividad. JS + manifest v3.</p>
+        <p data-i18n="card2.desc">Extensión de navegador para gestión del flujo de trabajo y productividad. JS + manifest v3.</p>
         <div class="card-footer">
-          <a class="card-link" href="#">ver proyecto <i class="ti ti-arrow-up-right"></i></a>
+          <a class="card-link" href="#" data-i18n="card.viewProject">ver proyecto <i class="ti ti-arrow-up-right"></i></a>
           <a class="card-link" href="https://github.com/nacanet" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
         </div>
       </article>
       <article class="card">
         <div class="card-header">
           <div class="card-icon icon-teal"><i class="ti ti-layout-dashboard"></i></div>
-          <span class="card-tag">plataforma · fullstack</span>
+          <span class="card-tag" data-i18n="card3.tag">plataforma · fullstack</span>
         </div>
         <h3>Inspiratee</h3>
-        <p>Plataforma completa con backend en Node.js, API REST y frontend para creadores y diseñadores.</p>
+        <p data-i18n="card3.desc">Plataforma completa con backend en Node.js, API REST y frontend para creadores y diseñadores.</p>
         <div class="card-footer">
-          <a class="card-link" href="#">ver proyecto <i class="ti ti-arrow-up-right"></i></a>
+          <a class="card-link" href="#" data-i18n="card.viewProject">ver proyecto <i class="ti ti-arrow-up-right"></i></a>
           <a class="card-link" href="https://github.com/nacanet" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
         </div>
       </article>
       <article class="card">
         <div class="card-header">
           <div class="card-icon icon-coral"><i class="ti ti-credit-card"></i></div>
-          <span class="card-tag">plugin · WordPress</span>
+          <span class="card-tag" data-i18n="card4.tag">plugin · WordPress</span>
         </div>
         <h3>Pixelimperium Stripe</h3>
-        <p>Plugin PHP para WordPress con integración completa de pagos via Stripe API.</p>
+        <p data-i18n="card4.desc">Plugin PHP para WordPress con integración completa de pagos via Stripe API.</p>
         <div class="card-footer">
-          <a class="card-link" href="#">ver proyecto <i class="ti ti-arrow-up-right"></i></a>
+          <a class="card-link" href="#" data-i18n="card.viewProject">ver proyecto <i class="ti ti-arrow-up-right"></i></a>
           <a class="card-link" href="https://github.com/nacanet" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
         </div>
       </article>
@@ -102,9 +116,9 @@
   <hr class="divider">
 
   <section class="section" id="stack">
-    <p class="section-label">tecnologías</p>
-    <h2>Stack completo</h2>
-    <p class="section-sub">Trabajo en toda la pila — frontend, backend, bases de datos, integraciones y automatizaciones.</p>
+    <p class="section-label" data-i18n="stack.label">tecnologías</p>
+    <h2 data-i18n="stack.title">Stack completo</h2>
+    <p class="section-sub" data-i18n="stack.sub">Trabajo en toda la pila — frontend, backend, bases de datos, integraciones y automatizaciones.</p>
     <div class="tech-stack">
       <div class="tech-item"><i class="ti ti-sparkles"></i><span>IA / LLMs</span></div>
       <div class="tech-item"><i class="ti ti-robot"></i><span>Agentes IA</span></div>
@@ -126,15 +140,15 @@
   <hr class="divider">
 
   <section class="section" id="contacto">
-    <p class="section-label">contacto</p>
-    <h2>Hablemos</h2>
+    <p class="section-label" data-i18n="contacto.label">contacto</p>
+    <h2 data-i18n="contacto.title">Hablemos</h2>
     <div class="contact-card">
       <div class="contact-links">
         <a href="mailto:nacanet2021@gmail.com"><i class="ti ti-mail"></i> nacanet2021@gmail.com</a>
         <a href="https://github.com/nacanet"><i class="ti ti-brand-github"></i> github.com/nacanet</a>
         <a href="https://nacanet.es"><i class="ti ti-world"></i> nacanet.es</a>
       </div>
-      <a class="btn-primary" href="mailto:nacanet2021@gmail.com">enviar email <i class="ti ti-arrow-right"></i></a>
+      <a class="btn-primary" href="mailto:nacanet2021@gmail.com" data-i18n="contacto.sendEmail">enviar email <i class="ti ti-arrow-right"></i></a>
     </div>
   </section>
 
@@ -143,7 +157,9 @@
       <img src="assets/logo.png" alt="nacanet logo">
       <span>nacanet.es</span>
     </div>
-    <span>© 2026 — todos los derechos reservados</span>
+    <span data-i18n="footer.rights">© 2026 — todos los derechos reservados</span>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
