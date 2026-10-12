@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowMind — Foco sin culpa para cerebros que se escapan</title>
+  <meta name="description" content="FlowMind es una extensión de Chrome para personas con TDAH, autismo o alta capacidad: detecta cuándo te has ido y te ayuda a volver con una respiración y una pregunta honesta.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nacanet.es/flowmind/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nacanet.es/flowmind/">
+  <meta property="og:title" content="FlowMind — Foco sin culpa">
+  <meta property="og:description" content="Extensión de Chrome que detecta cuándo te has ido y te ayuda a volver con una respiración y una pregunta honesta.">
+  <meta name="theme-color" content="#f4eee3">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="preload" href="../fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="top">
+    <a class="back" href="../" aria-label="nacanet.es">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>nacanet</span>
+    </a>
+    <div class="top-right">
+      <a class="top-link" href="#estado" data-i18n="nav.estado">estado</a>
+      <button class="lang" id="lang-toggle" type="button" aria-label="Change language"><span id="lang-label">EN</span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1 · Respira -->
+    <section class="room hero">
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="hero.eyebrow">FlowMind · extensión para Chrome</p>
+        <h1 data-i18n="hero.title">Tu cerebro se escapa. <em>FlowMind</em> te lo devuelve, sin culpa.</h1>
+        <p class="lead" data-i18n="hero.lead">Para personas con TDAH, autismo o alta capacidad. Nota cuándo te has ido —a una web, a una IA, a diez pestañas a la vez— y te ofrece una respiración y una pregunta honesta para volver.</p>
+        <a class="arrow-link" href="#momentos"><span data-i18n="hero.cta">Ver qué te diría</span> <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5v14m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="breath" id="breath">
+        <button class="orb-btn" id="orb" type="button" aria-live="polite" aria-label="Respirar">
+          <span class="ring r1"></span><span class="ring r2"></span>
+          <span class="orb"><span class="orb-core"></span></span>
+          <span class="orb-label">
+            <span class="orb-phase" id="phase" data-i18n="breath.idle">Respira</span>
+            <span class="orb-count" id="count" aria-hidden="true"></span>
+          </span>
+        </button>
+        <div class="patterns" role="group" aria-label="Patrón de respiración">
+          <button type="button" class="pat is-on" data-pat="478" aria-pressed="true">4-7-8</button>
+          <button type="button" class="pat" data-pat="box" aria-pressed="false" data-i18n="breath.box">cuadrada</button>
+          <button type="button" class="pat" data-pat="55" aria-pressed="false">5-5</button>
+        </div>
+        <p class="breath-hint" id="breath-hint" data-i18n="breath.hint">Toca el círculo. Es la misma respiración que verías en el aviso.</p>
+      </div>
+    </section>
+
+    <!-- 2 · Cinco momentos -->
+    <section class="room moments" id="momentos">
+      <div class="moments-head">
+        <p class="eyebrow" data-i18n="mom.eyebrow">Cinco momentos</p>
+        <h2 data-i18n="mom.title">Cada desvío tiene un motivo distinto. Cada aviso también.</h2>
+        <p class="lead" data-i18n="mom.lead">Estos son los cinco avisos que FlowMind lanza hoy. Elige uno y mira qué te diría.</p>
+      </div>
+
+      <div class="moments-body">
+        <div class="tabs" role="tablist" aria-orientation="vertical" id="tabs"></div>
+        <article class="overlay" id="overlay" role="tabpanel" aria-live="polite">
+          <p class="ov-demo" data-i18n="mom.demo">ejemplo · tarea: «<span id="demo-task">Terminar el informe</span>»</p>
+          <h3 class="ov-title" id="ov-title"></h3>
+          <p class="ov-msg" id="ov-msg"></p>
+          <div class="ov-advice">
+            <strong id="ov-adv-title"></strong>
+            <span id="ov-adv-body"></span>
+          </div>
+          <div class="ov-input" id="ov-input"></div>
+          <p class="ov-hint" id="ov-hint"></p>
+          <div class="ov-btns">
+            <span class="ov-btn ov-back" id="ov-back"></span>
+            <span class="ov-btn ov-stay" id="ov-stay"></span>
+          </div>
+          <p class="ov-breath"><span class="ov-dot"></span><span id="ov-breath"></span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 · Promesas -->
+    <section class="room promises">
+      <p class="eyebrow" data-i18n="pro.eyebrow">Cómo trata tu atención</p>
+      <ol class="pro-list">
+        <li>
+          <span class="pro-num">1</span>
+          <h3 data-i18n="pro1.t">Sin culpa.</h3>
+          <p data-i18n="pro1.d">Los avisos no hablan de fuerza de voluntad. Explican qué le pasa a tu cerebro y te dan una salida concreta: respirar, escribir una frase, beber agua.</p>
+        </li>
+        <li>
+          <span class="pro-num">2</span>
+          <h3 data-i18n="pro2.t">A tu ritmo.</h3>
+          <p data-i18n="pro2.d">Tú eliges cuánto tarda en avisar (de 3 a 30 segundos), qué webs cuentan como distracción y cuándo hacer una pausa.</p>
+        </li>
+        <li>
+          <span class="pro-num">3</span>
+          <h3 data-i18n="pro3.t">En tu navegador.</h3>
+          <p data-i18n="pro3.d">Tus tareas, tu historial y tus métricas se guardan en tu navegador. La extensión no envía datos a ningún servidor. Para mostrar el aviso necesita ver la pestaña activa, y por eso pide acceso a todas las webs.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 4 · Ritmo -->
+    <section class="room rhythm">
+      <div class="rhythm-head">
+        <p class="eyebrow" data-i18n="rhy.eyebrow">Para entender tu ritmo</p>
+        <h2 data-i18n="rhy.title">También mide, para que lo veas tú.</h2>
+      </div>
+      <dl class="rhythm-list">
+        <div><dt data-i18n="rhy1.t">Teclas por minuto</dt><dd data-i18n="rhy1.d">Cómo de seguido escribes ahora mismo.</dd></div>
+        <div><dt data-i18n="rhy2.t">Movimiento del ratón</dt><dd data-i18n="rhy2.d">Si estás explorando o atascado.</dd></div>
+        <div><dt data-i18n="rhy3.t">Calidad de foco</dt><dd data-i18n="rhy3.d">Un indicador sencillo que combina las dos señales y aprende tu ritmo personal.</dd></div>
+        <div><dt data-i18n="rhy4.t">Tareas y buscador</dt><dd data-i18n="rhy4.d">Retoma mañana una tarea justo donde la dejaste.</dd></div>
+        <div><dt data-i18n="rhy5.t">Pomodoro</dt><dd data-i18n="rhy5.d">Bloques de 25 minutos, si te ayudan.</dd></div>
+        <div><dt data-i18n="rhy6.t">Español e inglés</dt><dd data-i18n="rhy6.d">Avisos y ajustes en los dos idiomas.</dd></div>
+      </dl>
+    </section>
+
+    <!-- 5 · Estado -->
+    <section class="room status" id="estado">
+      <div class="status-head">
+        <p class="eyebrow" data-i18n="est.eyebrow">Dónde está ahora</p>
+        <h2 data-i18n="est.title">Un producto vivo, todavía pequeño.</h2>
+      </div>
+      <ul class="status-list">
+        <li>
+          <span class="badge on" data-i18n="est.b1">en pruebas</span>
+          <h3 data-i18n="est1.t">Extensión para Chrome</h3>
+          <p data-i18n="est1.d">Versión 2.0 (Manifest V3). Por ahora se instala a mano, en modo desarrollador.</p>
+        </li>
+        <li>
+          <span class="badge" data-i18n="est.b2">en desarrollo</span>
+          <h3 data-i18n="est2.t">App de escritorio</h3>
+          <p data-i18n="est2.d">Detectará qué aplicación tienes activa en todo el sistema, no solo en el navegador.</p>
+        </li>
+      </ul>
+
+      <div class="cta">
+        <h2 data-i18n="cta.title">¿Quieres probarla?</h2>
+        <p data-i18n="cta.d">Escríbenos y te pasamos la extensión. Nos ayudará mucho saber qué te funciona y qué no.</p>
+        <a class="btn" href="mailto:hola@nacanet.es?subject=FlowMind"><span data-i18n="cta.btn">Pedir la extensión</span> <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14m0 0l-6-6m6 6l-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <p class="docs"><a href="https://github.com/nacanet/nacanet.github.io/tree/main/flowmind" data-i18n="cta.docs">Leer el README (ES / EN)</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span data-i18n="foot.l">Un producto de <a href="../">nacanet</a></span>
+    <span>© 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es" data-tone="salvia">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inspiratee — Camisetas para respirar</title>
+  <meta name="description" content="Inspiratee: camisetas con mensajes de calma y atención plena. Respira en paz, exhala tensión. Tienda online en construcción.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nacanet.es/inspiratee/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nacanet.es/inspiratee/">
+  <meta property="og:title" content="Inspiratee — Camisetas para respirar">
+  <meta property="og:description" content="Camisetas con mensajes de calma y atención plena. Respira en paz, exhala tensión.">
+  <meta property="og:image" content="https://nacanet.es/inspiratee/img/salvia.webp">
+  <meta name="theme-color" content="#dbe5d1">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="preload" href="../fonts/young-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="bar">
+    <a class="back" href="../" aria-label="nacanet.es">← nacanet</a>
+    <img class="wordmark" src="img/logo-blanco.webp" alt="Inspiratee" width="118" height="77">
+    <button class="lang" id="lang-toggle" type="button" aria-label="Change language"><span id="lang-label">EN</span></button>
+  </header>
+
+  <main id="main">
+    <!-- 1 · respira -->
+    <section class="hero">
+      <svg class="halo" viewBox="0 0 400 400" aria-hidden="true">
+        <defs>
+          <path id="ring" d="M200,200 m-176,0 a176,176 0 1,1 352,0 a176,176 0 1,1 -352,0"/>
+          <clipPath id="disc"><circle cx="200" cy="200" r="118"/></clipPath>
+        </defs>
+        <g class="halo-ring"><text><textPath href="#ring" textLength="1090" lengthAdjust="spacing">BREATHE IN PEACE • BREATHE OUT TENSION •</textPath></text></g>
+        <g clip-path="url(#disc)" class="halo-waves" fill="none" stroke="currentColor" stroke-linecap="round">
+          <g class="w">
+            <path d="M40,120 q30,-18 60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0" stroke-width="2"/>
+            <path d="M40,150 q30,-18 60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0" stroke-width="3.2"/>
+            <path d="M40,180 q30,-18 60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0" stroke-width="2.4"/>
+            <path d="M40,210 q30,-18 60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0" stroke-width="3.6"/>
+            <path d="M40,240 q30,-18 60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0" stroke-width="2.4"/>
+            <path d="M40,270 q30,-18 60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0" stroke-width="2"/>
+          </g>
+        </g>
+      </svg>
+
+      <div class="hero-copy">
+        <p class="kicker" data-i18n="hero.kicker">Inspiratee · camisetas para respirar</p>
+        <h1>
+          <span class="in" data-i18n="hero.in">Respira<br>en paz.</span>
+          <span class="out" data-i18n="hero.out">Exhala<br>tensión.</span>
+        </h1>
+        <p class="lead" data-i18n="hero.lead">Camisetas con mensajes de calma y atención plena, para volver al presente cada vez que te las pongas.</p>
+
+        <fieldset class="tones">
+          <legend><span data-i18n="tone.label">Color</span>: <b id="tone-name">Salvia</b></legend>
+          <div class="swatches" role="radiogroup" aria-label="Color">
+            <button type="button" role="radio" aria-checked="true" data-tone="salvia" aria-label="Salvia" style="--c:#a9c3a0"></button>
+            <button type="button" role="radio" aria-checked="false" data-tone="arena" aria-label="Arena" style="--c:#d8c7a5"></button>
+            <button type="button" role="radio" aria-checked="false" data-tone="crema" aria-label="Crema" style="--c:#efe6d3"></button>
+            <button type="button" role="radio" aria-checked="false" data-tone="blanco" aria-label="Blanco" style="--c:#ffffff"></button>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="arch-wrap">
+        <div class="arch">
+          <img class="shot is-on" data-tone="salvia" src="img/salvia.webp" alt="" width="900" height="1350">
+          <img class="shot" data-tone="arena" src="img/arena.webp" alt="" width="900" height="1350" loading="lazy">
+          <img class="shot" data-tone="crema" src="img/crema.webp" alt="" width="900" height="1350" loading="lazy">
+          <img class="shot" data-tone="blanco" src="img/blanco.webp" alt="" width="900" height="1350" loading="lazy">
+        </div>
+        <div class="tag" aria-hidden="true">
+          <i></i>
+          <span class="tag-t" id="tag-name">Salvia</span>
+          <span class="tag-s">breathe in peace<br>breathe out tension</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · tendedero -->
+    <section class="laundry" id="disenos">
+      <div class="laundry-head">
+        <h2 data-i18n="lau.title">Los diseños, a secar al sol.</h2>
+        <p data-i18n="lau.sub">Cuelgan de la cuerda. Desliza para verlos todos.</p>
+      </div>
+
+      <div class="rail" tabindex="0" aria-label="Diseños">
+        <ul>
+          <li style="--r:-2.2deg">
+            <span class="peg p1"></span><span class="peg p2"></span>
+            <figure class="art art-wave">
+              <svg viewBox="0 0 400 400" aria-hidden="true"><text><textPath href="#ring" textLength="1090" lengthAdjust="spacing">BREATHE IN PEACE • BREATHE OUT TENSION •</textPath></text><g fill="none" stroke="currentColor" stroke-linecap="round" clip-path="url(#disc)">
+                <path d="M40,120 q30,-18 60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0" stroke-width="2"/><path d="M40,150 q30,-18 60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0" stroke-width="3.2"/><path d="M40,180 q30,-18 60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0" stroke-width="2.4"/><path d="M40,210 q30,-18 60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0" stroke-width="3.6"/><path d="M40,240 q30,-18 60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0" stroke-width="2.4"/><path d="M40,270 q30,-18 60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0 t60,0" stroke-width="2"/></g>
+                <circle cx="200" cy="200" r="118" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </figure>
+            <figcaption>Breathe in peace<small data-i18n="lau.c1">el diseño de las camisetas</small></figcaption>
+          </li>
+          <li style="--r:1.6deg">
+            <span class="peg p1"></span><span class="peg p2"></span>
+            <figure class="art"><img src="img/inner-peace.webp" alt="" width="663" height="668" loading="lazy"></figure>
+            <figcaption>Find your inner peace<small data-i18n="lau.c2">ilustración</small></figcaption>
+          </li>
+          <li style="--r:-1.2deg">
+            <span class="peg p1"></span><span class="peg p2"></span>
+            <figure class="art"><img src="img/stay-present.webp" alt="" width="425" height="457" loading="lazy"></figure>
+            <figcaption>Stay present<small data-i18n="lau.c3">ilustración</small></figcaption>
+          </li>
+          <li style="--r:2deg">
+            <span class="peg p1"></span><span class="peg p2"></span>
+            <figure class="art art-photo"><img src="img/porche.webp" alt="" width="900" height="1350" loading="lazy"></figure>
+            <figcaption>Blanco rosado<small data-i18n="lau.c4">en uso</small></figcaption>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3 · tienda -->
+    <section class="shop">
+      <div class="shop-in">
+        <p class="kicker" data-i18n="shop.kicker">Detrás de la marca</p>
+        <h2 data-i18n="shop.title">Y una tienda hecha a medida, sin prisas.</h2>
+
+        <ul class="shop-list">
+          <li><b data-i18n="sh1.t">Catálogo</b><span data-i18n="sh1.d">Producto por color, con selector de talla.</span></li>
+          <li><b data-i18n="sh2.t">Carrito</b><span data-i18n="sh2.d">Se guarda aunque cierres la pestaña.</span></li>
+          <li><b data-i18n="sh3.t">Compra en pasos</b><span data-i18n="sh3.d">Un proceso corto y claro, pensado para móvil.</span></li>
+          <li><b data-i18n="sh4.t">Boletín</b><span data-i18n="sh4.d">Para avisar de cada lanzamiento.</span></li>
+        </ul>
+
+        <p class="stack">Next.js · Tailwind CSS · Zustand · Medusa</p>
+
+        <div class="stamp" aria-hidden="false">
+          <span data-i18n="shop.stamp">En construcción</span>
+          <small data-i18n="shop.stamp2">los pagos llegan en la siguiente fase</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · aviso -->
+    <section class="notify">
+      <h2 data-i18n="not.title">Avísame cuando abra.</h2>
+      <p data-i18n="not.d">Escríbenos y te contamos cuando la colección esté disponible.</p>
+      <a class="btn" href="mailto:hola@nacanet.es?subject=Inspiratee"><span data-i18n="not.btn">Quiero que me avisen</span> →</a>
+      <p class="docs"><a href="https://github.com/nacanet/nacanet.github.io/tree/main/inspiratee" data-i18n="cta.docs">Leer el README (ES / EN)</a></p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span data-i18n="foot.l">Un producto de <a href="../">nacanet</a></span>
+    <span>© 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

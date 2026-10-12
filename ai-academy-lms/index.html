@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Academy LMS — Tema de WordPress para academias de IA</title>
+  <meta name="description" content="AI Academy LMS WordPress Theme: tema de WordPress con frontend en React (Vite), preparado para LearnPress y BuddyPress. Home híbrida, acceso de alumnos y comunidad.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nacanet.es/ai-academy-lms/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nacanet.es/ai-academy-lms/">
+  <meta property="og:title" content="AI Academy LMS — WordPress Theme">
+  <meta property="og:description" content="Tema de WordPress con frontend en React (Vite), preparado para LearnPress y BuddyPress.">
+  <meta name="theme-color" content="#fbfaf6">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="preload" href="../fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <div class="book">
+    <!-- ÍNDICE -->
+    <aside class="index">
+      <div class="index-in">
+        <a class="back" href="../" aria-label="nacanet.es">← nacanet</a>
+
+        <p class="mark">AI&nbsp;Academy<br>LMS<span>WordPress Theme</span></p>
+
+        <nav aria-label="Índice" class="toc" id="toc">
+          <a href="#portada" data-sec="portada"><span class="toc-t" data-i18n="toc.0">Portada</span><i></i><span class="toc-n">00</span></a>
+          <a href="#que-es" data-sec="que-es"><span class="toc-t" data-i18n="toc.1">Qué es</span><i></i><span class="toc-n">01</span></a>
+          <a href="#home" data-sec="home"><span class="toc-t" data-i18n="toc.2">La home híbrida</span><i></i><span class="toc-n">02</span></a>
+          <a href="#plantillas" data-sec="plantillas"><span class="toc-t" data-i18n="toc.3">Plantillas</span><i></i><span class="toc-n">03</span></a>
+          <a href="#instalacion" data-sec="instalacion"><span class="toc-t" data-i18n="toc.4">Instalación</span><i></i><span class="toc-n">04</span></a>
+          <a href="#versiones" data-sec="versiones"><span class="toc-t" data-i18n="toc.5">Versiones</span><i></i><span class="toc-n">05</span></a>
+        </nav>
+
+        <div class="index-foot">
+          <button class="lang" id="lang-toggle" type="button" aria-label="Change language"><span id="lang-label">EN</span></button>
+          <span class="ver">v1.0.0</span>
+        </div>
+      </div>
+    </aside>
+
+    <main id="main" class="pages">
+      <!-- 00 -->
+      <section class="page cover" id="portada" data-sec="portada">
+        <p class="label">§ 00 · <span data-i18n="cover.label">Tema de WordPress</span></p>
+        <h1 data-i18n="cover.title">El campus de IA que se instala como <em>un tema de WordPress</em>.</h1>
+        <p class="lede" data-i18n="cover.lede">Un frontend en React, rápido y modular, sobre LearnPress y BuddyPress. Pensado para desarrolladores y agencias que montan academias de formación en inteligencia artificial.</p>
+        <p class="cover-links">
+          <a class="btn" href="mailto:hola@nacanet.es?subject=AI%20Academy%20LMS%20WordPress%20Theme"><span data-i18n="cover.btn">Solicitar el tema</span></a>
+          <a class="ghost" href="#home" data-i18n="cover.ghost">Ver cómo es →</a>
+        </p>
+      </section>
+
+      <!-- 01 -->
+      <section class="page" id="que-es" data-sec="que-es">
+        <p class="label">§ 01 · <span data-i18n="s1.label">Qué es</span></p>
+        <h2 data-i18n="s1.title">Una academia online, sin salir de WordPress.</h2>
+        <div class="two">
+          <p data-i18n="s1.p1">WordPress sigue haciendo lo que mejor sabe: usuarios, cursos y contenido. El tema pone encima una interfaz moderna en React que se compila con Vite y se activa como cualquier otro tema.</p>
+          <p data-i18n="s1.p2">Detecta si LearnPress y BuddyPress están activos y adapta la interfaz: cursos y lecciones por un lado, comunidad y perfiles por otro.</p>
+        </div>
+
+        <div class="plate" aria-label="Ficha técnica">
+          <p class="plate-h" data-i18n="spec.h">Ficha técnica</p>
+          <dl>
+            <div><dt data-i18n="spec.1">Tipo</dt><dd data-i18n="spec.1v">Tema de WordPress</dd></div>
+            <div><dt data-i18n="spec.2">Interfaz</dt><dd>React 19 · Vite</dd></div>
+            <div><dt data-i18n="spec.3">Compatible con</dt><dd>LearnPress · BuddyPress</dd></div>
+            <div><dt data-i18n="spec.4">Requiere</dt><dd>WordPress 6.4+ · PHP 8.1+</dd></div>
+            <div><dt data-i18n="spec.5">Compilación</dt><dd data-i18n="spec.5v">Node.js 20+ (opcional en el servidor)</dd></div>
+            <div><dt data-i18n="spec.6">Idioma de la interfaz</dt><dd data-i18n="spec.6v">Español</dd></div>
+            <div><dt data-i18n="spec.7">Tipografía</dt><dd>Jost</dd></div>
+            <div><dt data-i18n="spec.8">Versión</dt><dd>1.0.0</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- 02 -->
+      <section class="page" id="home" data-sec="home">
+        <p class="label">§ 02 · <span data-i18n="s2.label">La home híbrida</span></p>
+        <h2 data-i18n="s2.title">Acceso para quien ya es alumno. Oferta para quien llega.</h2>
+        <p class="lede" data-i18n="s2.lede">La portada hace dos trabajos a la vez, sin que ninguno estorbe al otro. Pasa el ratón por la lista para ver dónde está cada pieza.</p>
+
+        <div class="spread">
+          <figure class="wf" aria-hidden="true" id="wf">
+            <div class="wf-bar"><b></b><span></span><span></span><span></span><em></em></div>
+            <div class="wf-top">
+              <div class="wf-hero" data-z="1">
+                <i class="l1"></i><i class="l2"></i><i class="l3"></i>
+                <div class="wf-btns"><u class="gold"></u><u></u></div>
+                <s>1</s>
+              </div>
+              <div class="wf-access" data-z="2">
+                <i class="a1"></i><div class="field"></div><div class="field"></div><u class="gold full"></u>
+                <s>2</s>
+              </div>
+            </div>
+            <div class="wf-status" data-z="3"><div></div><div></div><s>3</s></div>
+            <div class="wf-grid" data-z="4"><div></div><div></div><div></div><s>4</s></div>
+            <div class="wf-grid wf-plans" data-z="5"><div></div><div></div><div class="dark"></div><s>5</s></div>
+            <div class="wf-split" data-z="6"><div></div><div class="dark"></div><s>6</s></div>
+          </figure>
+
+          <ol class="notes" id="notes">
+            <li data-z="1"><b data-i18n="n1.t">Portada</b><span data-i18n="n1.d">Mensaje principal y dos llamadas a la acción: explorar rutas y ver membresías.</span></li>
+            <li data-z="2"><b data-i18n="n2.t">Acceso al campus</b><span data-i18n="n2.d">Formulario de entrada visible desde el primer momento, con recuperar contraseña y registro.</span></li>
+            <li data-z="3"><b data-i18n="n3.t">Estado de integraciones</b><span data-i18n="n3.d">Avisa si LearnPress o BuddyPress no están activos, para no dejar secciones vacías.</span></li>
+            <li data-z="4"><b data-i18n="n4.t">Rutas de aprendizaje</b><span data-i18n="n4.d">Bloques de formación que enlazan al catálogo de cursos.</span></li>
+            <li data-z="5"><b data-i18n="n5.t">Membresías</b><span data-i18n="n5.d">Planes con su detalle. Los textos de ejemplo se sustituyen por los tuyos.</span></li>
+            <li data-z="6"><b data-i18n="n6.t">Zona alumno y comunidad</b><span data-i18n="n6.d">Progreso, clases pendientes y recursos, junto a la entrada a la comunidad.</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 03 -->
+      <section class="page" id="plantillas" data-sec="plantillas">
+        <p class="label">§ 03 · <span data-i18n="s3.label">Plantillas</span></p>
+        <h2 data-i18n="s3.title">Lo que incluye, página a página.</h2>
+        <ul class="contents">
+          <li><span data-i18n="t1.t">Home híbrida</span><i></i><em data-i18n="t1.d">acceso + oferta formativa</em></li>
+          <li><span data-i18n="t2.t">Acceso IA</span><i></i><em data-i18n="t2.d">plantilla de página para entrar</em></li>
+          <li><span data-i18n="t3.t">Registro</span><i></i><em data-i18n="t3.d">alta de nuevos alumnos</em></li>
+          <li><span data-i18n="t4.t">Recuperar contraseña</span><i></i><em data-i18n="t4.d">flujo propio</em></li>
+          <li><span data-i18n="t5.t">Panel de usuario</span><i></i><em data-i18n="t5.d">zona del alumno</em></li>
+          <li><span data-i18n="t6.t">Archivo de cursos</span><i></i><em data-i18n="t6.d">override de LearnPress</em></li>
+          <li><span data-i18n="t7.t">Curso individual</span><i></i><em data-i18n="t7.d">override de LearnPress</em></li>
+          <li><span data-i18n="t8.t">Comunidad</span><i></i><em data-i18n="t8.d">contenedor para BuddyPress</em></li>
+        </ul>
+      </section>
+
+      <!-- 04 -->
+      <section class="page" id="instalacion" data-sec="instalacion">
+        <p class="label">§ 04 · <span data-i18n="s4.label">Instalación</span></p>
+        <h2 data-i18n="s4.title">Súbelo ya compilado y actívalo.</h2>
+        <p class="lede" data-i18n="s4.lede">El tema funciona sin ejecutar npm en el servidor: si trae sus recursos compilados, WordPress los carga directamente.</p>
+        <ol class="steps">
+          <li><b>1</b><span data-i18n="i1">Copia la carpeta del tema en <code>wp-content/themes</code>.</span></li>
+          <li><b>2</b><span data-i18n="i2">Si necesitas recompilar, ejecuta la compilación del tema en tu equipo y sube el resultado.</span></li>
+          <li><b>3</b><span data-i18n="i3">Actívalo desde el administrador de WordPress.</span></li>
+          <li><b>4</b><span data-i18n="i4">Instala y activa LearnPress y BuddyPress.</span></li>
+          <li><b>5</b><span data-i18n="i5">Crea una página con la plantilla «Acceso IA» para la entrada de alumnos.</span></li>
+        </ol>
+      </section>
+
+      <!-- 05 -->
+      <section class="page" id="versiones" data-sec="versiones">
+        <p class="label">§ 05 · <span data-i18n="s5.label">Versiones</span></p>
+        <h2 data-i18n="s5.title">Empieza con la versión Freemium.</h2>
+        <p class="lede" data-i18n="s5.lede">Hay un repositorio público con la descripción y la documentación del tema. Para conocer condiciones y acceso al código, escríbenos.</p>
+        <p class="cover-links">
+          <a class="btn" href="mailto:hola@nacanet.es?subject=AI%20Academy%20LMS%20WordPress%20Theme"><span data-i18n="cover.btn">Solicitar el tema</span></a>
+          <a class="ghost" href="https://github.com/nacanet/AI-Academy-LMS-Wordpress-Theme-Freemium" data-i18n="s5.repo">Repositorio público (Freemium) ↗</a>
+        </p>
+        <p class="docs"><a href="https://github.com/nacanet/nacanet.github.io/tree/main/ai-academy-lms" data-i18n="cta.docs">Leer el README (ES / EN)</a></p>
+        <footer class="colophon">
+          <span data-i18n="foot.l">Un producto de <a href="../">nacanet</a></span>
+          <span>© 2026</span>
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
