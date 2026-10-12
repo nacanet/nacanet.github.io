@@ -1,5 +1,7 @@
 # FlowMind
 
+![FlowMind](social.png)
+
 [🇪🇸 Español](README.md) · 🇬🇧 English · [Landing](https://nacanet.es/flowmind/)
 
 **Guilt-free focus for brains that drift.**

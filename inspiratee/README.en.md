@@ -1,5 +1,7 @@
 # Inspiratee
 
+![Inspiratee](social.png)
+
 [🇪🇸 Español](README.md) · 🇬🇧 English · [Landing](https://nacanet.es/inspiratee/)
 
 **T-shirts to breathe in.**

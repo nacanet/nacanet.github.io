@@ -1,5 +1,7 @@
 # AI Academy LMS — WordPress Theme
 
+![AI Academy LMS](social.png)
+
 [🇪🇸 Español](README.md) · 🇬🇧 English · [Landing](https://nacanet.es/ai-academy-lms/)
 
 **A WordPress theme with a React (Vite) frontend, ready for LearnPress and BuddyPress.**
