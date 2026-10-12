@@ -1,6 +1,6 @@
 # Inspiratee
 
-![Inspiratee](social.png)
+![Inspiratee](portada-tienda.png)
 
 [🇪🇸 Español](README.md) · 🇬🇧 English · [Landing](https://nacanet.es/inspiratee/)
 
