@@ -122,16 +122,16 @@ body {
 :root[data-theme="light"] .blob-2 { animation-name: drift2, glow2-light; }
 :root[data-theme="light"] .blob-3 { animation-name: drift3, glow3-light; }
 @keyframes glow1-light {
-  0%, 66%, 100% { opacity: 0.04; }
-  16%           { opacity: 0.18; }
+  0%, 66%, 100% { opacity: 0.16; }
+  16%           { opacity: 0.5; }
 }
 @keyframes glow2-light {
-  0%, 66%, 100% { opacity: 0.04; }
-  16%           { opacity: 0.18; }
+  0%, 66%, 100% { opacity: 0.16; }
+  16%           { opacity: 0.5; }
 }
 @keyframes glow3-light {
-  0%, 66%, 100% { opacity: 0.04; }
-  16%           { opacity: 0.18; }
+  0%, 66%, 100% { opacity: 0.16; }
+  16%           { opacity: 0.5; }
 }
 
 /* ---------- Nav ---------- */
