@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nacanet — Desarrollador fullstack & IA</title>
-  <meta name="description" content="Desarrollador fullstack especializado en IA: avatares, agentes conversacionales, automatizaciones e integraciones. React, Python, PHP, WordPress y más.">
-  <meta name="keywords" content="desarrollador fullstack, programador IA, agentes IA, React, Python, PHP, WordPress, desarrollo web a medida">
+  <title>nacanet — Productos digitales con IA</title>
+  <meta name="description" content="Estudio de producto e inteligencia artificial: agentes conversacionales, avatares, automatizaciones y plataformas a medida. De la idea al lanzamiento.">
+  <meta name="keywords" content="agentes IA, automatización, desarrollo de producto, MVP, startup, React, Python, PHP, WordPress, SaaS">
   <meta name="author" content="nacanet">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://nacanet.es/">
@@ -13,13 +13,13 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_ES">
   <meta property="og:url" content="https://nacanet.es/">
-  <meta property="og:title" content="nacanet — Desarrollador fullstack & IA">
-  <meta property="og:description" content="Desarrollador fullstack especializado en IA: avatares, agentes conversacionales, automatizaciones e integraciones. React, Python, PHP, WordPress y más.">
+  <meta property="og:title" content="nacanet — Productos digitales con IA">
+  <meta property="og:description" content="Estudio de producto e inteligencia artificial: agentes, avatares, automatizaciones y plataformas a medida. De la idea al lanzamiento.">
   <meta property="og:image" content="https://nacanet.es/assets/avatar.jpeg">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="nacanet — Desarrollador fullstack & IA">
-  <meta name="twitter:description" content="Desarrollador fullstack especializado en IA: avatares, agentes conversacionales, automatizaciones e integraciones.">
+  <meta name="twitter:title" content="nacanet — Productos digitales con IA">
+  <meta name="twitter:description" content="Estudio de producto e inteligencia artificial: agentes, avatares, automatizaciones y plataformas a medida.">
   <meta name="twitter:image" content="https://nacanet.es/assets/avatar.jpeg">
 
   <meta name="theme-color" content="#0c0d10">
@@ -29,14 +29,15 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
+    "@type": "Organization",
     "name": "nacanet",
     "url": "https://nacanet.es/",
+    "logo": "https://nacanet.es/assets/logo.png",
     "image": "https://nacanet.es/assets/avatar.jpeg",
-    "jobTitle": "Desarrollador fullstack",
-    "email": "mailto:hola@nacanet.es",
+    "email": "hola@nacanet.es",
+    "description": "Estudio de producto e inteligencia artificial: agentes, avatares, automatizaciones y plataformas a medida.",
     "sameAs": ["https://github.com/nacanet"],
-    "knowsAbout": ["React", "Python", "PHP", "WordPress", "Inteligencia artificial", "Agentes IA"]
+    "knowsAbout": ["Inteligencia artificial", "Agentes IA", "Automatización", "React", "Python", "PHP", "WordPress"]
   }
   </script>
   <script>
@@ -61,9 +62,10 @@
       <span class="nav-name">nacanet</span>
     </a>
     <div class="nav-links">
-      <a href="#proyectos" data-i18n="nav.proyectos">proyectos</a>
+      <a href="#servicios" data-i18n="nav.servicios">servicios</a>
+      <a href="#productos" data-i18n="nav.productos">productos</a>
+      <a href="#proceso" data-i18n="nav.proceso">proceso</a>
       <a href="#stack" data-i18n="nav.stack">stack</a>
-      <a href="#contacto" data-i18n="nav.contacto">contacto</a>
     </div>
     <div class="nav-toggles">
       <button class="toggle-btn" id="theme-toggle" type="button" aria-label="Cambiar tema">
@@ -72,28 +74,73 @@
       <button class="toggle-btn lang-btn" id="lang-toggle" type="button" aria-label="Change language">
         <span id="lang-label">EN</span>
       </button>
+      <a class="btn-nav" href="#contacto" data-i18n="nav.cta">hablemos</a>
     </div>
   </nav>
 
   <header class="hero" id="top">
-    <div class="avatar-frame">
-      <img class="hero-logo" src="assets/avatar.jpeg" alt="nacanet avatar">
-    </div>
-    <span class="hero-tag"><span class="dot"></span> <span data-i18n="hero.tag">disponible para proyectos</span></span>
-    <h1 data-i18n="hero.title">Desarrollador<br>fullstack</h1>
-    <p data-i18n="hero.desc">Diseño y construyo productos digitales completos — desde la base de datos hasta la interfaz. Especializado en inteligencia artificial: avatares, agentes, automatizaciones e integraciones. React, Python, PHP, WordPress y lo que haga falta.</p>
+    <span class="hero-tag"><span class="dot"></span> <span data-i18n="hero.tag">aceptando nuevos proyectos</span></span>
+    <h1 data-i18n="hero.title">Productos digitales con <span class="grad">IA</span>,<br>de la idea al lanzamiento</h1>
+    <p data-i18n="hero.desc">Somos un estudio de producto e inteligencia artificial. Diseñamos y construimos agentes, automatizaciones y plataformas a medida para que tu idea salga al mercado rápido y funcione.</p>
     <div class="hero-btns">
-      <a class="btn-primary" href="#proyectos"><span data-i18n="hero.btnPrimary">ver proyectos</span> <i class="ti ti-arrow-right"></i></a>
-      <a class="btn-secondary" href="#contacto" data-i18n="hero.btnSecondary">contactar</a>
+      <a class="btn-primary" href="#contacto"><span data-i18n="hero.btnPrimary">cuéntanos tu idea</span> <i class="ti ti-arrow-right"></i></a>
+      <a class="btn-secondary" href="#productos" data-i18n="hero.btnSecondary">ver productos</a>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="window">
+        <div class="window-bar">
+          <span></span><span></span><span></span>
+          <em>agent.nacanet.es</em>
+        </div>
+        <div class="window-body">
+          <div class="msg msg-user" data-i18n="mock.user">¿Puedes resumir los pedidos de hoy y avisar al equipo?</div>
+          <div class="msg msg-ai">
+            <span class="msg-ai-head"><i class="ti ti-sparkles"></i> nacanet agent</span>
+            <span data-i18n="mock.ai">Hecho. 24 pedidos procesados, 2 incidencias detectadas. He enviado el resumen al canal del equipo.</span>
+          </div>
+          <div class="msg-status"><i class="ti ti-circle-check"></i> <span data-i18n="mock.status">2 automatizaciones ejecutadas</span></div>
+        </div>
+      </div>
     </div>
   </header>
 
   <hr class="divider">
 
-  <section class="section" id="proyectos">
-    <p class="section-label" data-i18n="proyectos.label">proyectos</p>
-    <h2 data-i18n="proyectos.title">Trabajo reciente</h2>
-    <p class="section-sub" data-i18n="proyectos.sub">Algunas de las cosas que he construido — apps, extensiones, plugins, plataformas y más.</p>
+  <section class="section" id="servicios">
+    <p class="section-label" data-i18n="servicios.label">servicios</p>
+    <h2 data-i18n="servicios.title">Todo lo que necesita tu producto</h2>
+    <p class="section-sub" data-i18n="servicios.sub">Un único equipo para validar, construir y poner en marcha. Sin intermediarios.</p>
+    <div class="services">
+      <article class="card">
+        <div class="card-icon icon-amber"><i class="ti ti-robot"></i></div>
+        <h3 data-i18n="s1.title">Agentes y avatares IA</h3>
+        <p data-i18n="s1.desc">Asistentes conversacionales y avatares conectados a tus datos y herramientas, que atienden, venden y resuelven.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon icon-teal"><i class="ti ti-automation"></i></div>
+        <h3 data-i18n="s2.title">Automatización</h3>
+        <p data-i18n="s2.desc">Flujos que conectan tus apps, APIs y modelos de lenguaje para eliminar el trabajo manual repetitivo.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon icon-purple"><i class="ti ti-rocket"></i></div>
+        <h3 data-i18n="s3.title">MVP y producto a medida</h3>
+        <p data-i18n="s3.desc">Web apps y plataformas fullstack, desde la base de datos hasta la interfaz, listas para usuarios reales.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon icon-coral"><i class="ti ti-plug-connected"></i></div>
+        <h3 data-i18n="s4.title">Integraciones y pagos</h3>
+        <p data-i18n="s4.desc">WordPress, extensiones de navegador, Stripe y APIs de terceros integradas sin fricción.</p>
+      </article>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section" id="productos">
+    <p class="section-label" data-i18n="productos.label">productos</p>
+    <h2 data-i18n="productos.title">Lo que ya hemos construido</h2>
+    <p class="section-sub" data-i18n="productos.sub">Productos y herramientas reales, de extensiones a plataformas completas.</p>
     <div class="projects">
       <article class="card">
         <div class="card-header">
@@ -103,7 +150,7 @@
         <h3 data-i18n="card1.title">Soluciones con IA</h3>
         <p data-i18n="card1.desc">Avatares con IA, agentes conversacionales, automatizaciones e integraciones con modelos de lenguaje.</p>
         <div class="card-footer">
-          <a class="card-link" href="#" data-i18n="card.viewProject">ver proyecto <i class="ti ti-arrow-up-right"></i></a>
+          <a class="card-link" href="#contacto" data-i18n="card.viewProject">saber más <i class="ti ti-arrow-up-right"></i></a>
           <a class="card-link" href="https://github.com/nacanet" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
         </div>
       </article>
@@ -115,7 +162,7 @@
         <h3>FlowMind</h3>
         <p data-i18n="card2.desc">Extensión de navegador para gestión del flujo de trabajo y productividad. JS + manifest v3.</p>
         <div class="card-footer">
-          <a class="card-link" href="#" data-i18n="card.viewProject">ver proyecto <i class="ti ti-arrow-up-right"></i></a>
+          <a class="card-link" href="#contacto" data-i18n="card.viewProject">saber más <i class="ti ti-arrow-up-right"></i></a>
           <a class="card-link" href="https://github.com/nacanet" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
         </div>
       </article>
@@ -127,7 +174,7 @@
         <h3>Inspiratee</h3>
         <p data-i18n="card3.desc">Plataforma completa con backend en Node.js, API REST y frontend para creadores y diseñadores.</p>
         <div class="card-footer">
-          <a class="card-link" href="#" data-i18n="card.viewProject">ver proyecto <i class="ti ti-arrow-up-right"></i></a>
+          <a class="card-link" href="#contacto" data-i18n="card.viewProject">saber más <i class="ti ti-arrow-up-right"></i></a>
           <a class="card-link" href="https://github.com/nacanet" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
         </div>
       </article>
@@ -139,7 +186,7 @@
         <h3>Pixelimperium Stripe</h3>
         <p data-i18n="card4.desc">Plugin PHP para WordPress con integración completa de pagos via Stripe API.</p>
         <div class="card-footer">
-          <a class="card-link" href="#" data-i18n="card.viewProject">ver proyecto <i class="ti ti-arrow-up-right"></i></a>
+          <a class="card-link" href="#contacto" data-i18n="card.viewProject">saber más <i class="ti ti-arrow-up-right"></i></a>
           <a class="card-link" href="https://github.com/nacanet" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
         </div>
       </article>
@@ -148,10 +195,40 @@
 
   <hr class="divider">
 
+  <section class="section" id="proceso">
+    <p class="section-label" data-i18n="proceso.label">cómo trabajamos</p>
+    <h2 data-i18n="proceso.title">Del problema al producto en cuatro pasos</h2>
+    <p class="section-sub" data-i18n="proceso.sub">Ciclos cortos, entregas visibles y decisiones basadas en uso real.</p>
+    <ol class="steps">
+      <li class="step">
+        <span class="step-num">01</span>
+        <h3 data-i18n="p1.title">Descubrir</h3>
+        <p data-i18n="p1.desc">Entendemos el problema, los usuarios y qué merece construirse primero.</p>
+      </li>
+      <li class="step">
+        <span class="step-num">02</span>
+        <h3 data-i18n="p2.title">Prototipar</h3>
+        <p data-i18n="p2.desc">Un prototipo funcional en días para validar la idea antes de invertir más.</p>
+      </li>
+      <li class="step">
+        <span class="step-num">03</span>
+        <h3 data-i18n="p3.title">Lanzar</h3>
+        <p data-i18n="p3.desc">Producto listo para usuarios reales: infraestructura, pagos e integraciones.</p>
+      </li>
+      <li class="step">
+        <span class="step-num">04</span>
+        <h3 data-i18n="p4.title">Iterar</h3>
+        <p data-i18n="p4.desc">Medimos, aprendemos y mejoramos con cada versión.</p>
+      </li>
+    </ol>
+  </section>
+
+  <hr class="divider">
+
   <section class="section" id="stack">
     <p class="section-label" data-i18n="stack.label">tecnologías</p>
     <h2 data-i18n="stack.title">Stack completo</h2>
-    <p class="section-sub" data-i18n="stack.sub">Trabajo en toda la pila — frontend, backend, bases de datos, integraciones y automatizaciones.</p>
+    <p class="section-sub" data-i18n="stack.sub">Trabajamos en toda la pila — frontend, backend, bases de datos, integraciones y automatizaciones.</p>
     <div class="tech-stack">
       <div class="tech-item"><i class="ti ti-sparkles"></i><span>IA / LLMs</span></div>
       <div class="tech-item"><i class="ti ti-robot"></i><span>Agentes IA</span></div>
@@ -173,15 +250,15 @@
   <hr class="divider">
 
   <section class="section" id="contacto">
-    <p class="section-label" data-i18n="contacto.label">contacto</p>
-    <h2 data-i18n="contacto.title">Hablemos</h2>
-    <div class="contact-card">
-      <div class="contact-links">
-        <a href="mailto:hola@nacanet.es"><i class="ti ti-mail"></i> hola@nacanet.es</a>
-        <a href="https://github.com/nacanet"><i class="ti ti-brand-github"></i> github.com/nacanet</a>
-        <a href="https://nacanet.es"><i class="ti ti-world"></i> nacanet.es</a>
+    <div class="cta-card">
+      <p class="section-label" data-i18n="contacto.label">contacto</p>
+      <h2 data-i18n="contacto.title">¿Tienes una idea? Hagámosla realidad</h2>
+      <p class="section-sub" data-i18n="contacto.sub">Cuéntanos qué quieres construir y te respondemos con un plan y los siguientes pasos.</p>
+      <div class="hero-btns">
+        <a class="btn-primary" href="mailto:hola@nacanet.es"><span data-i18n="contacto.sendEmail">escríbenos</span> <i class="ti ti-arrow-right"></i></a>
+        <a class="btn-secondary" href="https://github.com/nacanet"><i class="ti ti-brand-github"></i> GitHub</a>
       </div>
-      <a class="btn-primary" href="mailto:hola@nacanet.es" data-i18n="contacto.sendEmail">enviar email <i class="ti ti-arrow-right"></i></a>
+      <p class="cta-mail"><i class="ti ti-mail"></i> hola@nacanet.es</p>
     </div>
   </section>
 
@@ -190,7 +267,13 @@
       <img src="assets/logo.png" alt="nacanet logo">
       <span>nacanet.es</span>
     </div>
-    <span data-i18n="footer.rights">© 2026 — todos los derechos reservados</span>
+    <nav class="footer-links" aria-label="footer">
+      <a href="#servicios" data-i18n="nav.servicios">servicios</a>
+      <a href="#productos" data-i18n="nav.productos">productos</a>
+      <a href="#proceso" data-i18n="nav.proceso">proceso</a>
+      <a href="https://github.com/nacanet">GitHub</a>
+    </nav>
+    <span data-i18n="footer.rights">© 2026 nacanet — todos los derechos reservados</span>
   </footer>
 
   <script src="script.js"></script>
